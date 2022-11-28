@@ -1,14 +1,14 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
+// Younger Skin logo brand color: #8E9864
 $ys-green: #8E9864
 $ys-green-invert: #fff
 
 $primary: $ys-green
 $primary-invert: $ys-green-invert
 $body-color: #333
-$black: #2b2523
+$black: #2b2b23
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -61,10 +61,10 @@ $black: #2b2523
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #8E9864
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px #99A955
+    box-shadow: inset 0 0 0 2px #99A955
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -73,6 +73,9 @@ $black: #2b2523
 
 .navbar-item .icon
   color: $primary
+
+.navbar-item a:hover
+  color: $primary-invert
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem

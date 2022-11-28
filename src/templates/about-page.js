@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import FullWidthImage from "../components/FullWidthImage";
+import { getImage } from "gatsby-plugin-image";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ image, title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
+  const heroImage = getImage(image) || image;
 
   return (
     <section className="section section--gradient">
@@ -15,7 +18,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           <div className="column is-10 is-offset-1">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
+                <FullWidthImage img={heroImage} title={title} />
               </h2>
               <PageContent className="content" content={content} />
             </div>
