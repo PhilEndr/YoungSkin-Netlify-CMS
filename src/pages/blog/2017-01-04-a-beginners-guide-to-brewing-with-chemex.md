@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: A beginners’ guide to applying skin-care products
-date: 2017-01-04T15:04:10.000Z
+date: 2022-11-28T23:52:00.710Z
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
   nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
   diam voluptua. At vero eos et accusam et
