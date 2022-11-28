@@ -66,10 +66,12 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div>
-                  <div className="columns">
+                  <div className="columns" style={{marginTop: "3rem"}}>
                     <h3 className="has-text-weight-semibold is-size-3">
                       {main.heading}
                     </h3>
+                  </div>
+                  <div className="columns">
                       <p>{main.description}</p>
                   </div>
                   <div className="tile is-ancestor">

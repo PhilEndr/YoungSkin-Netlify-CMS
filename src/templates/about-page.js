@@ -30,6 +30,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent }) =
 };
 
 AboutPageTemplate.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
@@ -41,6 +42,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <AboutPageTemplate
+        image={post.frontmatter.image}
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -61,6 +63,11 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }
