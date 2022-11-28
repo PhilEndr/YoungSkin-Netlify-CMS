@@ -2,7 +2,7 @@
 heading: Great Skin-Care with a Conscience
 path: /products
 templateKey: product-page
-title: Our Coffee
+title: Our Skin-Care Products
 image: /img/xt4s4552.jpg
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
   nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
