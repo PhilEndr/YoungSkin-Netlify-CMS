@@ -3,18 +3,56 @@ heading: Great Skin-Care with a Conscience
 path: /products
 templateKey: product-page
 title: Our Skin-Care Products
-image: /img/xt4s4552.jpg
+image: /img/xt4s4530.jpg
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
   nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
   diam voluptua. At vero eos et accusam et
 intro:
-  blurbs: []
+  blurbs:
+    - image: /img/xt4s4535.jpg
+      text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet.
+    - image: /img/xt4s4552.jpg
+      text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet.
   heading: What we offer
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet....
+testimonials:
+  - author: John Doe
+    quote: My skin feels so smooth now after applying the serum once .. only once ;)
+  - author: Jane Doe
+    quote: I can't wait to buy more in much bigger batches! I wanr to swim in it.
+full_image: /img/xt4s4550.jpg
+pricing:
+  heading: Monthly subscriptions
+  description: Flatrate!
+  plans:
+    - description: Perfect for the human being who likes to enjoy 1-2 sessions per day.
+      items:
+        - 3 tubes
+      plan: Small
+      price: "50"
+    - description: Great for anybody who needs more
+      items:
+        - 100 tubes
+      plan: Big
+      price: "80"
+    - description: Want a few tiny batches from different varieties? Try our custom plan
+      items:
+        - Maybe you get it all?!
+      plan: Custom
+      price: ??
 main:
   heading: Great coffee with no compromises
   description: >
@@ -31,39 +69,4 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: Kaldi is the place to go if you want the best quality coffee. I love
-      their stance on empowering farmers and transparency.
-full_image: /img/xt4s4550.jpg
-pricing:
-  heading: Monthly subscriptions
-  description: We make it easy to make great coffee a part of your life. Choose
-    one of our monthly subscription plans to receive great coffee at your
-    doorstep each month. Contact us about more details and payment info.
-  plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
-      items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: "50"
-    - description: Great for avid drinkers, java-loving couples and bigger crowds
-      items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: "80"
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: ??
 ---
