@@ -182,6 +182,34 @@ export const pageQuery = graphql`
           heading
           description
         }
+        main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+              }
+            }
+          }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
+              }
+            }
+          }
+        }
       }
     }
   }
