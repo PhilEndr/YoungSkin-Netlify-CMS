@@ -1,14 +1,29 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Great Skin-Care with a Conscience
 image: /img/flashafrucht00190.jpg
 heading: Great skin-care with a conscience
 subheading: Support sustainable farming
 mainpitch:
   title: Why Younger Skin?
-  description: |
-    Why will Younger Skin convince all... Put your arguments here ;)
-description: More great arguments here ;)
+  description: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
+description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+  nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+  kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 intro:
   blurbs:
     - image: /img/xt4s4545.jpg
