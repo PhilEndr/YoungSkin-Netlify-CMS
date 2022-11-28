@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImageLandingPage";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -17,6 +18,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  main,
 }) => {
   const heroImage = getImage(image) || image;
 
@@ -64,6 +66,27 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div>
+                  <div className="tile is-ancestor">
+                    <div className="tile is-vertical">
+                      <div className="tile">
+                        <div className="tile is-parent is-vertical">
+                          <article className="tile is-child">
+                            <PreviewCompatibleImage imageInfo={main.image1} />
+                          </article>
+                        </div>
+                        <div className="tile is-parent">
+                          <article className="tile is-child">
+                            <PreviewCompatibleImage imageInfo={main.image2} />
+                          </article>
+                        </div>
+                      </div>
+                      <div className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image3} />
+                        </article>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -84,6 +107,13 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 };
 
 const IndexPage = ({ data }) => {
@@ -99,6 +129,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   );

@@ -12,20 +12,20 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent }) =
   const heroImage = getImage(image) || image;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                <FullWidthImage img={heroImage} title={title} />
-              </h2>
-              <PageContent className="content" content={content} />
+    <div>
+      <FullWidthImage img={heroImage} title={title} />
+        <section className="section section--gradient">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="section">
+                  <PageContent className="content" content={content} />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
   );
 };
 
