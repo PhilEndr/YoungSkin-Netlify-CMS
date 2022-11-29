@@ -83,7 +83,7 @@ const Navbar = class extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon">
+                <span>
                   todo: Cart Image
                 </span>
               </a>
