@@ -36,24 +36,20 @@ class TestimonialRollTemplate extends React.Component {
                     </div>
                   ) : null}
                   <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date} - {post.frontmatter.name}
+                        "{post.excerpt}"
+                        <br />
+                        <br />
+                    </span>
+                    <span>
+                        &bull; {post.frontmatter.name} - {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
-                  <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    More Details →
+                    Read more →
                   </Link>
                 </p>
               </article>
@@ -91,6 +87,7 @@ export default function TestimonialRoll() {
                 }
                 frontmatter {
                   title
+                  name
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost

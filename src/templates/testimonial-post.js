@@ -46,7 +46,7 @@ TestimonialPostTemplate.propTypes = {
   helmet: PropTypes.object,
 };
 
-const BlogPost = ({ data }) => {
+const TestimonialPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -71,13 +71,13 @@ const BlogPost = ({ data }) => {
   );
 };
 
-BlogPost.propTypes = {
+TestimonialPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BlogPost;
+export default TestimonialPost;
 
 export const pageQuery = graphql`
   query TestimonialPostByID($id: String!) {
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
+        name
       }
     }
   }
