@@ -32,7 +32,7 @@ testimonials:
   - author: John Doe
     quote: My skin feels so smooth now after applying the serum once .. only once ;)
   - author: Jane Doe
-    quote: I can't wait to buy more in much bigger batches! I wanr to swim in it.
+    quote: I can't wait to buy more in much bigger batches! I want to swim in it.
 full_image: /img/xt4s4550.jpg
 pricing:
   heading: Monthly subscriptions
