@@ -44,7 +44,7 @@ class TestimonialRollTemplate extends React.Component {
                     </Link>
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
+                      {post.frontmatter.date} - {post.frontmatter.name}
                     </span>
                   </p>
                 </header>
@@ -53,7 +53,7 @@ class TestimonialRollTemplate extends React.Component {
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                    More Details →
                   </Link>
                 </p>
               </article>
