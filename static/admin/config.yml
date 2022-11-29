@@ -176,6 +176,7 @@ collections:
                 [
                   { label: Quote, name: quote, widget: string },
                   { label: Author, name: author, widget: string },
+                  { label: Image, name: image, widget: image },
                 ],
             }
           - { label: Full_image, name: full_image, widget: image }
