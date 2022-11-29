@@ -10,15 +10,13 @@ export default class TestimonialIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/xt4s4538.jpg')`,
+            backgroundImage: `url('/img/xt4s4563.jpg')`,
           }}
         >
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow:
-                "rgba(142, 152, 100, 0.3) 0.5rem 0px 0px, rgba(142, 152, 100, 0.3) -0.5rem 0px 0px",
-              backgroundColor: "rgba(142, 152, 100, 0.3)",
+              textShadow: "rgba(142, 152, 100, 0.5) 0.5rem 3px 0px, rgba(142, 152, 100, 0.5) -0.2rem 3px 0px",
               color: "white",
               padding: "1rem",
             }}

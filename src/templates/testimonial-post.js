@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 // eslint-disable-next-line
 export const TestimonialPostTemplate = ({
@@ -13,6 +14,7 @@ export const TestimonialPostTemplate = ({
   name,
   title,
   helmet,
+  featuredimage,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -21,7 +23,23 @@ export const TestimonialPostTemplate = ({
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+            {featuredimage ? (
+              <div className="featured-thumbnail column is-4">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: featuredimage,
+                    alt: `featured image thumbnail for post ${title}`,
+                    width:
+                      featuredimage.childImageSharp
+                        .gatsbyImageData.width,
+                    height:
+                      featuredimage.childImageSharp
+                        .gatsbyImageData.height,
+                  }}
+                />
+              </div>
+            ) : null}
+          <div className="column is-7">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -44,6 +62,7 @@ TestimonialPostTemplate.propTypes = {
   title: PropTypes.string,
   name: PropTypes.string,
   helmet: PropTypes.object,
+  featuredimage: PropTypes.object,
 };
 
 const TestimonialPost = ({ data }) => {
@@ -56,16 +75,17 @@ const TestimonialPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Testimonial">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
+              content={`${post.frontmatter.title}`}
             />
           </Helmet>
         }
         name={post.frontmatter.name}
         title={post.frontmatter.title}
+        featuredimage={post.frontmatter.featuredimage}
       />
     </Layout>
   );
@@ -88,6 +108,15 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         name
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(
+              width: 360
+              quality: 100
+              layout: CONSTRAINED
+            )
+          }
+        }
       }
     }
   }

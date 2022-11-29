@@ -36,17 +36,28 @@ class TestimonialRollTemplate extends React.Component {
                     </div>
                   ) : null}
                   <p className="post-meta">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
-                        "{post.excerpt}"
-                        <br />
-                        <br />
-                    </span>
-                    <span>
-                        &bull; {post.frontmatter.name} - {post.frontmatter.date}
+                      {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
                 <p>
+                  <span style={{fontStyle: 'italic', textAlign: 'justify', hyphens: 'auto'}}>
+                    "{post.excerpt}"
+                    <br />
+                    <br />
+                  </span>
+                  <span>
+                    &bull; {post.frontmatter.name}
+                  </span>
+                  <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
                     Read more →
@@ -98,7 +109,6 @@ export default function TestimonialRoll() {
                         quality: 100
                         layout: CONSTRAINED
                       )
-
                     }
                   }
                 }
