@@ -55,6 +55,7 @@ export default function FullWidthImage(props) {
             formats={["auto", "webp", "avif"]}
           />
         )}
+        {/*
         {(title || subheading) && (
           <div
             style={{
@@ -70,7 +71,6 @@ export default function FullWidthImage(props) {
               height: "100%",
             }}
           >
-            {/* Any content here will be centered in the component */}
             {title && (
               <h1
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
@@ -101,6 +101,7 @@ export default function FullWidthImage(props) {
             )}
           </div>
         )}
+      */}
       </div>
     </React.Fragment>
   );
