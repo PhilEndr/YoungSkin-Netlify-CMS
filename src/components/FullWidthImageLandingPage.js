@@ -63,7 +63,11 @@ export default function FullWidthImage(props) {
               position: "relative",
               // This centers the other elements inside the hero component
               placeItems: "center",
-              display: "grid",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-end",
+              background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 100%)",
+              height: "100%",
             }}
           >
             {/* Any content here will be centered in the component */}
@@ -71,7 +75,7 @@ export default function FullWidthImage(props) {
               <h1
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
-                  textShadow: "rgba(142, 152, 100, 0.5) 0.5rem 3px 0px, rgba(142, 152, 100, 0.5) -0.2rem 3px 0px",
+                  textShadow: "rgba(142, 152, 100, 0.5) 0.3rem 3px 0px",
                   color: "white",
                   lineHeight: "1",
                   padding: "1rem",
@@ -84,11 +88,12 @@ export default function FullWidthImage(props) {
               <h3
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  textShadow: "rgba(142, 152, 100, 0.5) 0.5rem 3px 0px, rgba(142, 152, 100, 0.5) -0.2rem 3px 0px",
+                  textShadow: "rgba(142, 152, 100, 0.5) 0.3rem 3px 0px",
                   color: "white",
                   lineHeight: "1",
                   padding: "1rem",
                   marginTop: "0.5rem",
+                  marginBottom: "2rem",
                 }}
               >
                 {subheading}
