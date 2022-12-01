@@ -6,6 +6,8 @@ import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 import { getImage } from "gatsby-plugin-image";
 
+import './template.sass';
+
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ image, title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -19,7 +21,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent }) =
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  <PageContent className="content" content={content} />
+                  <PageContent className="content custom-font" content={content} />
                 </div>
               </div>
             </div>

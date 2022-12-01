@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
+import '../templates/template.sass';
+
 class TestimonialRollTemplate extends React.Component {
   render() {
     const { data } = this.props
@@ -37,24 +39,24 @@ class TestimonialRollTemplate extends React.Component {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="new-title has-text-primary is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <span className="new-subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
                 <p>
-                  <span style={{fontStyle: 'italic', textAlign: 'justify', hyphens: 'auto'}}>
+                  <p className="feature-text" style={{fontStyle: 'italic', textAlign: 'justify', hyphens: 'auto'}}>
                     "{post.excerpt}"
                     <br />
                     <br />
-                  </span>
-                  <span>
+                  </p>
+                  <span className="feature-text">
                     &bull; {post.frontmatter.name}
                   </span>
                   <br />

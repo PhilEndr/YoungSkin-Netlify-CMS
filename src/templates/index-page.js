@@ -9,6 +9,8 @@ import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImageLandingPage";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+import './template.sass';
+
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -33,18 +35,18 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="new-title">{mainpitch.title}</h1>
                     </div>
                     <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                      <h3 className="new-subtitle">{mainpitch.description}</h3>
                     </div>
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
+                      <h3 className="new-subtitle has-text-weight-semibold is-size-2">
                         {heading}
                       </h3>
-                      <p>{description}</p>
+                      <p className="description">{description}</p>
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
@@ -56,7 +58,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="new-subtitle has-text-weight-semibold is-size-2">
                       Latest stories
                     </h3>
                     <BlogRoll />
@@ -67,12 +69,12 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <div className="columns" style={{marginTop: "3rem"}}>
-                    <h3 className="has-text-weight-semibold is-size-3">
+                    <h3 className=" new-subtitle has-text-weight-semibold is-size-3">
                       {main.heading}
                     </h3>
                   </div>
                   <div className="columns">
-                      <p>{main.description}</p>
+                      <p className="description">{main.description}</p>
                   </div>
                   <div className="tile is-ancestor">
                     <div className="tile is-vertical">

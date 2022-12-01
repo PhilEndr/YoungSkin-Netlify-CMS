@@ -1,6 +1,8 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
+import '../templates/template.sass';
+
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 );

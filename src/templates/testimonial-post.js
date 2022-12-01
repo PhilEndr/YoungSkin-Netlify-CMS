@@ -6,6 +6,8 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+import './template.sass';
+
 // eslint-disable-next-line
 export const TestimonialPostTemplate = ({
   content,
@@ -40,13 +42,13 @@ export const TestimonialPostTemplate = ({
               </div>
             ) : null}
           <div className="column is-7">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="new-title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            <div style={{ marginTop: `4rem` }}>
-              <h4>{name}</h4>
+            <p className="description">{description}</p>
+            <PostContent className="description" content={content} />
+            <div className="new-subtitle" style={{ marginTop: `4rem` }}>
+              <h4>&bull; {name}</h4>
             </div>
           </div>
         </div>

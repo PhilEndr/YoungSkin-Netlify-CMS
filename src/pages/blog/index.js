@@ -3,6 +3,8 @@ import * as React from "react";
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
 
+import '../../templates/template.sass';
+
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
@@ -16,7 +18,7 @@ export default class BlogIndexPage extends React.Component {
           }}
         >
           <h1
-            className="has-text-weight-bold is-size-1"
+            className="new-title has-text-weight-bold is-size-1"
             style={{
               textShadow: "rgba(142, 152, 100, 0.5) 0.3rem 3px 0px",
               color: "white",

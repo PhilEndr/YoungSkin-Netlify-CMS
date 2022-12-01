@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
+import '../templates/template.sass';
+
 class BlogRollTemplate extends React.Component {
   render() {
     const { data } = this.props
@@ -37,18 +39,18 @@ class BlogRollTemplate extends React.Component {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="new-title has-text-primary is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <span className="new-subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
-                <p>
+                <p className="feature-text">
                   {post.excerpt}
                   <br />
                   <br />
