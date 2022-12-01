@@ -7,8 +7,8 @@ export default () => (
     <section className="section">
       <div className="container">
         <div className="content">
-          <h1>Thank you!</h1>
-          <p>We come back to you soon!</p>
+          <h1 className="new-title">Thank you!</h1>
+          <p className="new-subtitle" style={{fontSize: "x-large"}}>We come back to you soon!</p>
         </div>
       </div>
     </section>

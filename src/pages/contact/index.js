@@ -2,6 +2,8 @@ import * as React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
 
+import '../../templates/template.sass';
+
 function encode(data) {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -39,7 +41,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1 className="new-title">Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -57,7 +59,7 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"name"}>
+                  <label className="label custom-font" htmlFor={"name"}>
                     Your name
                   </label>
                   <div className="control">
@@ -72,7 +74,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"email"}>
+                  <label className="label custom-font" htmlFor={"email"}>
                     Email
                   </label>
                   <div className="control">
@@ -87,7 +89,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"message"}>
+                  <label className="label custom-font" htmlFor={"message"}>
                     Message
                   </label>
                   <div className="control">
@@ -101,7 +103,7 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <button className="new-btn is-link" type="submit">
                     Send
                   </button>
                 </div>
