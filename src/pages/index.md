@@ -11,13 +11,13 @@ mainpitch:
     voluptua. At vero eos et accusam et
 intro:
   blurbs:
-    - image: /img/xt4s4545.jpg
+    - image: /img/2022-12-04-nate-s-avocados00668.jpg
       text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
         clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
         amet.
-    - image: /img/xt4s4552.jpg
+    - image: /img/2022-12-04-nate-s-avocados00674.jpg
       text: >
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -52,12 +52,12 @@ main:
     clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
     amet.
   image1:
-    alt: two Avocados chilling on he floor
-    image: /img/xt4s4535.jpg
+    alt: Eat it!
+    image: /img/2022-12-04-nate-s-avocados00723.jpg
   image2:
-    alt: two Avocados served on THE silver plate
-    image: /img/xt4s4563.jpg
+    alt: Avocado is served
+    image: /img/2022-12-04-nate-s-avocados00712.jpg
   image3:
-    alt: Her Majesty!
-    image: /img/xt4s4545.jpg
+    alt: Lifecycle
+    image: /img/2022-12-04-nate-s-avocados00708.jpg
 ---
