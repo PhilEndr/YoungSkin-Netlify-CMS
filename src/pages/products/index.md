@@ -3,7 +3,7 @@ heading: Great Skin-Care with a Conscience
 path: /products
 templateKey: product-page
 title: Our Skin-Care Products
-image: /img/xt4s4530.jpg
+image: /img/2022-12-04-nate-s-avocados00648-1.jpg
 description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
   nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
   diam voluptua. At vero eos et accusam et
@@ -28,11 +28,6 @@ intro:
     voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
     clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
     amet....
-testimonials:
-  - author: John Doe
-    quote: My skin feels so smooth now after applying the serum once .. only once ;)
-  - author: Jane Doe
-    quote: I can't wait to buy more in much bigger batches! I want to swim in it.
 full_image: /img/xt4s4550.jpg
 pricing:
   heading: Monthly subscriptions
@@ -53,4 +48,9 @@ pricing:
         - Maybe you get it all?!
       plan: Custom
       price: ??
+testimonials:
+  - author: John Doe
+    quote: My skin feels so smooth now after applying the serum once .. only once ;)
+  - author: Jane Doe
+    quote: I can't wait to buy more in much bigger batches! I want to swim in it.
 ---
