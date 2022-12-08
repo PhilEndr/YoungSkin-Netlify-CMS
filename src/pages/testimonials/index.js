@@ -52,7 +52,7 @@ export default class TestimonialIndexPage extends React.Component {
                   padding: "1rem",
                   marginBottom: "2rem",}}
                 >
-                  Testimonials
+                  Reviews
                 </span>
               </h1>
           </div>

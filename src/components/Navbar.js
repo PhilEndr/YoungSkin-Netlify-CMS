@@ -69,7 +69,7 @@ const Navbar = class extends React.Component {
                 Products
               </Link>
               <Link className="navbar-item" to="/testimonials">
-                Testimonials
+                Reviews
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
@@ -79,16 +79,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://www.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  todo: Cart Image
-                </span>
-              </a>
+              &nbsp;
             </div>
           </div>
         </div>
