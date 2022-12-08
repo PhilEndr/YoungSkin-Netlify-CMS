@@ -23,7 +23,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, val
               <div className="column is-10 is-offset-1">
                 <div className="section">
                   <PageContent className="content custom-font" content={content} />
-                  <Features gridItems={values.value} />
+                  <Features gridItems={values} />
                 </div>
               </div>
             </div>
@@ -38,9 +38,7 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  values: PropTypes.shape({
-    value: PropTypes.array,
-  }),
+  values: PropTypes.array,
 };
 
 const AboutPage = ({ data }) => {
@@ -77,14 +75,12 @@ export const aboutPageQuery = graphql`
           }
         }
         values {
-          value {
-            file {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
+          file {
+            childImageSharp {
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
             }
-            body
           }
+          body
         }
       }
     }
