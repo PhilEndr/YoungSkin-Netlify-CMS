@@ -157,6 +157,7 @@ collections:
                 required: false,
                 fields:
                   [
+                    { label: Title, name: title, widget: text, required: false, default: "" },
                     { label: "File / Image / Video", name: file, widget: file, required: false },
                     { label: Body, name: body, widget: markdown, required: false, default: "" },
                   ],

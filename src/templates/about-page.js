@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 import { getImage } from "gatsby-plugin-image";
-import Features from "../components/Features";
+import Value from "../components/Values";
 
 import './template.sass';
 
@@ -23,7 +23,7 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, val
               <div className="column is-10 is-offset-1">
                 <div className="section">
                   <PageContent className="content custom-font" content={content} />
-                  <Features gridItems={values} />
+                  <Value gridItems={values} />
                 </div>
               </div>
             </div>
@@ -75,6 +75,7 @@ export const aboutPageQuery = graphql`
           }
         }
         values {
+          title
           file {
             childImageSharp {
               gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
