@@ -6,8 +6,7 @@ const AboutPagePreview = ({ entry, widgetFor, getAsset }) => (
   <AboutPageTemplate
     image={getAsset(entry.getIn(['data', 'image']))}
     title={entry.getIn(['data', 'title'])}
-    entryValues={entry.getIn(['data', 'values', 'value'])}
-    values={entryValues ? entryValues.toJS() : []}
+    values={entry.getIn(['data', 'values', 'value'])}
     content={widgetFor('body')}
   />
 )
