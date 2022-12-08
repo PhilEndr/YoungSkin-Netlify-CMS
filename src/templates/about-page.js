@@ -5,11 +5,12 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 import { getImage } from "gatsby-plugin-image";
+import Features from "../components/Features";
 
 import './template.sass';
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ image, title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ image, title, content, contentComponent, values }) => {
   const PageContent = contentComponent || Content;
   const heroImage = getImage(image) || image;
 
@@ -22,10 +23,11 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent }) =
               <div className="column is-10 is-offset-1">
                 <div className="section">
                   <PageContent className="content custom-font" content={content} />
+                  <Features gridItems={values.value} />
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
         </section>
       </div>
   );
@@ -36,6 +38,9 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  values: PropTypes.shape({
+    value: PropTypes.array,
+  }),
 };
 
 const AboutPage = ({ data }) => {
@@ -48,6 +53,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        values={post.frontmatter.values}
       />
     </Layout>
   );
@@ -68,6 +74,12 @@ export const aboutPageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+        values {
+          value {
+            file 
+            body
           }
         }
       }

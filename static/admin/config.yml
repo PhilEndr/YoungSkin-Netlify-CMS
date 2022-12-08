@@ -148,7 +148,27 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Values,
+              name: values,
+              widget: object,
+              required: false,
+              fields:
+                [
+                  {
+                    label: Value,
+                    name: value,
+                    widget: list,
+                    required: false,
+                    fields:
+                      [
+                        { label: "File / Image / Video", name: file, widget: file },
+                        { label: Body, name: body, widget: markdown },
+                      ],
+                  },
+                ],
+            }
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
