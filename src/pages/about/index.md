@@ -11,6 +11,9 @@ values:
       voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
       clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
       amet.
+  - title: test2
+    body: H﻿ello
+    file: /img/pxl_20221208_135905870.mp4
 ---
 ### Shade-grown Avocados
 
