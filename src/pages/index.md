@@ -58,6 +58,6 @@ main:
     alt: Avocado is served
     image: /img/2022-12-04-nate-s-avocados00712.jpg
   image3:
-    alt: Lifecycle
+    alt: Lifecycle!
     image: /img/2022-12-04-nate-s-avocados00708.jpg
 ---
