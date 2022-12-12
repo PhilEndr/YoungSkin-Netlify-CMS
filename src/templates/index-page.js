@@ -57,6 +57,8 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div>
+                  <video src="https://www.youtube.com/watch?v=KKC3fHBES-M" />
+{/*
                   <div className="column is-12">
                     <h3 className="new-subtitle has-text-weight-semibold is-size-2">
                       Latest stories
@@ -68,6 +70,7 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div>
+*/}
                   <div className="columns" style={{marginTop: "3rem"}}>
                     <h3 className=" new-subtitle has-text-weight-semibold is-size-3">
                       {main.heading}
