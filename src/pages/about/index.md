@@ -4,7 +4,7 @@ path: /about
 title: About our values
 image: /img/2022-12-04-nate-s-avocados00668.jpg
 values:
-  - file: /img/2022-12-04-nate-s-avocados00668.jpg
+  - image: /img/2022-12-04-nate-s-avocados00668.jpg
     title: test
     body: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
       eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -13,7 +13,7 @@ values:
       amet.
   - title: test2
     body: H﻿ello
-    file: /img/pxl_20221208_135905870.mp4
+    image: /img/pxl_20221208_135905870.mp4
 ---
 ### Shade-grown Avocados
 

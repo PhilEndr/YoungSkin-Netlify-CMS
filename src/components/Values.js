@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import '../templates/template.sass';
 
@@ -17,7 +17,7 @@ const Value = ({ gridItems }) => (
             >
               <h1 className="new-title" style={{fontSize: "xx-large"}}>{item.title}</h1>
               <p className="feature-text" style={{marginBottom: "1em"}}>{item.body}</p>
-              <PreviewCompatibleImage imageInfo={item.file} />
+              <PreviewCompatibleImage imageInfo={item.image} />
               <br />
             </div>
           </div>
