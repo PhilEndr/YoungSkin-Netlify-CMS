@@ -17,7 +17,6 @@ export const ProductPageTemplate = ({
   description,
   intro,
   fullImage,
-  pricing,
 }) => {
   const heroImage = getImage(image) || image;
   const fullWidthImage = getImage(fullImage) || fullImage;
@@ -75,11 +74,6 @@ ProductPageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
 };
 
 const ProductPage = ({ data }) => {
@@ -94,7 +88,6 @@ const ProductPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
       />
     </Layout>
   );
@@ -138,16 +131,6 @@ export const productPageQuery = graphql`
         full_image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
       }
