@@ -64,16 +64,9 @@ module.exports = {
               destinationDir: "static",
             },
           },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-embed-video`,
-          `gatsby-remark-images`,
-          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: "gatsby-remark-embed-video",
+          },
         ],
       },
     },
