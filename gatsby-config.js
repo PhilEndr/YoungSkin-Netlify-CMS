@@ -67,6 +67,9 @@ module.exports = {
           {
             resolve: "gatsby-remark-embed-video",
           },
+          {
+            resolve: "gatsby-remark-responsive-iframe",
+          },
         ],
       },
     },
