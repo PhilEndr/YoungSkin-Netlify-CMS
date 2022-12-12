@@ -32,22 +32,7 @@ full_image: /img/2022-12-04-nate-s-avocados00708.jpg
 pricing:
   heading: Monthly subscriptions
   description: Flatrate!
-  plans:
-    - description: Perfect for the human being who likes to enjoy 1-2 sessions per day.
-      items:
-        - 3 tubes
-      plan: Small
-      price: "50"
-    - description: Great for anybody who needs more
-      items:
-        - 100 tubes
-      plan: Big
-      price: "80"
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - Maybe you get it all?!
-      plan: Custom
-      price: ??
+  plans: []
 testimonials:
   - author: John Doe
     quote: My skin feels so smooth now after applying the serum once .. only once ;)
