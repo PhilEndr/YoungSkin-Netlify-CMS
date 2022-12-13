@@ -21,7 +21,11 @@ export const AboutPageTemplate = ({ image, title, values }) => {
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  <Value gridItems={values} />
+                  {values ?
+                    <Value gridItems={values} />
+                    :
+                    null
+                  }
                 </div>
               </div>
             </div>
