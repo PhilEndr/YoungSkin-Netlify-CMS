@@ -11,7 +11,7 @@ const Value = ({ gridItems }) => (
         <section style={{marginBottom: "5rem"}}>
           <h1 className="new-title" style={{fontSize: "xx-large"}}>{item.title}</h1>
           <p className="feature-text" style={{marginBottom: "1em"}}>{item.body}</p>
-          <PreviewCompatibleImage imageInfo={item.image} />
+          <PreviewCompatibleImage imageInfo={item} />
         </section>
       </div>
     ))}
