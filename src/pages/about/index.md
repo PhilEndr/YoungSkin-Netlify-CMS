@@ -4,7 +4,33 @@ path: /about
 title: About our values
 image: /img/2022-12-04-nate-s-avocados00668.jpg
 values:
-  - body: H﻿ello, test
+  - body: >-
+      H﻿ello, test
+
+
+      `youtube: https://www.youtube.com/watch?v=agWtgUMllgU&list=RDagWtgUMllgU&start_radio=1`
+
+
+      ```
+
+      if {}
+
+      else {}
+
+      ```
+
+
+      * w﻿q
+
+      * z﻿ul
+
+
+      1. 2﻿qr
+
+      2. t﻿zkt
+
+
+      T﻿***EST***
     title: Test1
     image: /img/2022-12-04-nate-s-avocados00668.jpg
 ---
