@@ -5,22 +5,13 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import '../templates/template.sass';
 
 const Value = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div>
     {gridItems.map((item) => (
-      <div key={item.body} className="column">
-        <section className="section">
-          <div>
-            <div
-              style={{
-                display: "inline-block",
-              }}
-            >
-              <h1 className="new-title" style={{fontSize: "xx-large"}}>{item.title}</h1>
-              <p className="feature-text" style={{marginBottom: "1em"}}>{item.body}</p>
-              <PreviewCompatibleImage imageInfo={item.image} />
-              <br />
-            </div>
-          </div>
+      <div key={item.body}>
+        <section style={{marginBottom: "5rem"}}>
+          <h1 className="new-title" style={{fontSize: "xx-large"}}>{item.title}</h1>
+          <p className="feature-text" style={{marginBottom: "1em"}}>{item.body}</p>
+          <PreviewCompatibleImage imageInfo={item.image} />
         </section>
       </div>
     ))}

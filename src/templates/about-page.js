@@ -10,8 +10,7 @@ import Value from "../components/Values";
 import './template.sass';
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ image, title, content, contentComponent, values }) => {
-  const PageContent = contentComponent || Content;
+export const AboutPageTemplate = ({ image, title, values }) => {
   const heroImage = getImage(image) || image;
 
   return (
@@ -22,7 +21,6 @@ export const AboutPageTemplate = ({ image, title, content, contentComponent, val
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  <PageContent className="content custom-font" content={content} />
                   <Value gridItems={values} />
                 </div>
               </div>
@@ -48,7 +46,6 @@ const AboutPage = ({ data }) => {
     <Layout>
       <AboutPageTemplate
         image={post.frontmatter.image}
-        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
         values={post.frontmatter.values}

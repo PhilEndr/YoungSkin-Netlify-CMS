@@ -146,20 +146,16 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-          - 
-              {
+          - {
                 label: Values,
                 name: values,
                 widget: list,
                 required: false,
                 fields:
                   [
-                    { label: Title, name: title, widget: text, required: true, default: "" },
-                    { label: "Image", name: image, widget: image, required: false },
-                    { label: Body, name: body, widget: markdown, required: false, default: "" },
+                    { label: Title, name: title, widget: text, required: false },
+                    { label: Image, name: image, widget: image, required: false },
+                    { label: Body, name: body, widget: markdown, required: true, default: "" },
                   ],
               }
             
