@@ -6,7 +6,7 @@ image: /img/2022-12-04-nate-s-avocados00668.jpg
 values:
   - body: t﻿est
     title: test
-    image: /img/2022-12-04-nate-s-avocados00668.jpg
+    image: ""
 ---
 ### Shade-grown Avocados
 
