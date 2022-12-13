@@ -85,3 +85,27 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+      type MarkdownRemark implements Node {
+          frontmatter: Frontmatter
+      }
+      type Frontmatter @infer {
+        blurbs: [Blurb!]!,
+        values: [Value!]!,
+      }
+      type Blurb {
+          image: File! @fileByRelativePath,
+          text: String!,
+      }
+      type Value {
+        title: String!,
+        body: String,
+        image: File! @fileByRelativePath,
+    }
+  `;
+
+  createTypes(typeDefs);
+};
