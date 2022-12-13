@@ -3,7 +3,10 @@ templateKey: about-page
 path: /about
 title: About our values
 image: /img/2022-12-04-nate-s-avocados00668.jpg
-values: []
+values:
+  - body: H﻿ello, test
+    title: Test1
+    image: /img/2022-12-04-nate-s-avocados00668.jpg
 ---
 ### Shade-grown Avocados
 
