@@ -12,7 +12,6 @@ const AboutPagePreview = ({ entry, widgetFor, getAsset }) => {
     image={getAsset(entry.getIn(['data', 'image']))}
     title={entry.getIn(['data', 'title'])}
     values={initValues}
-    content={widgetFor('body')}
   />
   )
 }

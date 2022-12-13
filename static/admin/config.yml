@@ -146,6 +146,8 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
           - {
                 label: Values,
                 name: values,
@@ -153,9 +155,9 @@ collections:
                 required: false,
                 fields:
                   [
-                    { label: Title, name: title, widget: text, required: false },
-                    { label: Image, name: image, widget: image, required: false },
+                    { label: Title, name: title, widget: string, required: false },
                     { label: Body, name: body, widget: markdown, required: true, default: "" },
+                    { label: Image, name: image, widget: image, required: false },
                   ],
               }
             
