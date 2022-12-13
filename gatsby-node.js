@@ -93,17 +93,17 @@ exports.createSchemaCustomization = ({ actions }) => {
           frontmatter: Frontmatter
       }
       type Frontmatter @infer {
-        blurbs: [Blurb!]!,
-        values: [Value!]!,
+        blurbs: [Blurb],
+        values: [Value],
       }
       type Blurb {
-          image: File! @fileByRelativePath,
+          image: File @fileByRelativePath,
           text: String!,
       }
       type Value {
-        title: String!,
-        body: String,
-        image: File! @fileByRelativePath,
+        title: String,
+        body: String!,
+        image: File @fileByRelativePath,
     }
   `;
 

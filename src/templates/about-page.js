@@ -34,8 +34,6 @@ export const AboutPageTemplate = ({ image, title, values }) => {
 AboutPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
   values: PropTypes.array,
 };
 
@@ -47,7 +45,6 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         image={post.frontmatter.image}
         title={post.frontmatter.title}
-        content={post.html}
         values={post.frontmatter.values}
       />
     </Layout>
