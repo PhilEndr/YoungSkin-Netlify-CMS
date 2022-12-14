@@ -5,12 +5,12 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 import { getImage } from "gatsby-plugin-image";
-import Value from "../components/Values";
 
 import './template.sass';
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ image, title, values }) => {
+export const AboutPageTemplate = ({ image, title, content, contentComponent }) => {
+  const PageContent = contentComponent || Content;
   const heroImage = getImage(image) || image;
 
   return (
@@ -21,11 +21,7 @@ export const AboutPageTemplate = ({ image, title, values }) => {
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  {values ?
-                    <Value gridItems={values} />
-                    :
-                    null
-                  }
+                  <PageContent className="content custom-font" content={content} />
                 </div>
               </div>
             </div>
@@ -38,7 +34,8 @@ export const AboutPageTemplate = ({ image, title, values }) => {
 AboutPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string.isRequired,
-  values: PropTypes.array,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 };
 
 const AboutPage = ({ data }) => {
@@ -48,8 +45,9 @@ const AboutPage = ({ data }) => {
     <Layout>
       <AboutPageTemplate
         image={post.frontmatter.image}
+        contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        values={post.frontmatter.values}
+        content={post.html}
       />
     </Layout>
   );
@@ -71,15 +69,6 @@ export const aboutPageQuery = graphql`
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
-        }
-        values {
-          title
-          image {
-            childImageSharp {
-              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-            }
-          }
-          body
         }
       }
     }
