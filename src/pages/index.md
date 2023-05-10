@@ -1,14 +1,13 @@
 ---
-heading: Great skin-care with a conscience
+heading: Who We Are
 subheading: Support sustainable farming
 templateKey: index-page
 image: /img/2022-12-04-nate-s-avocados00648-1.jpg
 mainpitch:
-  title: Why Younger Skin?
+  title: "Younger Skin: Everything You Need, Nothing You Don't"
   description: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-    voluptua. At vero eos et accusam et
+    Who said more ingredients is better? We believe in quality, not quantity.
+    Only the right ingredients make it into our skincare products. 
 intro:
   blurbs:
     - image: /img/2022-12-04-nate-s-avocados00668.jpg
