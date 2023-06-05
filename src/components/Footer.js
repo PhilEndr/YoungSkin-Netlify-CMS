@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import SocialMedia from "./SocialMedia";
 
-import logo from "../img/logo_younger-skin.svg";
+import logo from "../img/ys_logo_small_brown.jpg";
 
 const Footer = class extends React.Component {
   render() {
