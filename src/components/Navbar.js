@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo_younger-skin.svg";
+import logo from "../img/ys_logo_big.jpg";
 import SocialMedia from "./SocialMedia";
 
 const Navbar = class extends React.Component {
