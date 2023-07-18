@@ -10,7 +10,7 @@ import tiktok from "../img/social/tiktok-svgrepo-com.svg";
 const SocialMedia = () => {
     return (
         <div className="is-4 social" style={{padding: "0.75rem"}}>
-            <a title="instagram" href="https://www.instagram.com/younger.skinllc/" target="_blank" rel="noopener noreferrer">
+            <a title="instagram" href="https://www.instagram.com/younger.skin.cleancare/" target="_blank" rel="noopener noreferrer">
                 <img
                 src={instagram}
                 alt="Instagram"
