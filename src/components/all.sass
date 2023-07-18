@@ -1,15 +1,13 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url("./fonts.css")
 
-// Config vars
-// Younger Skin logo brand color: #8E9864
-$ys-green: #94cbaa //#8E9864
+$ys-green: #a0d8b3
 $ys-green-invert: #fff
 
 $primary: $ys-green
 $primary-invert: $ys-green-invert
-$body-color: #333
-$black: #2b2b23
+$body-color: #00463f
+$black: #000000
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -76,8 +74,8 @@ $black: #2b2b23
   color: $primary
 
 .navbar-item
-  font-family: "Teko"
-  font-weight: 600
+  font-family: "Raleway"
+  font-weight: 700
   font-size: larger
   color: $black
   &:hover
@@ -85,8 +83,8 @@ $black: #2b2b23
 
 // contents
 .new-title
-  font-family: "Teko"
-  font-weight: 600
+  font-family: "Raleway"
+  font-weight: 700
   font-size: larger
   
 // Override for use of svg's from https://simpleicons.org/
@@ -138,8 +136,18 @@ $menu-label-color: $white-ter
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-// secondary colors
+// primary colors
 .has-background-pantone-black-c
+  background-color: #000000 !important
+.has-background-pantone-344-c
+  background-color: #a0d8b3 !important
+.has-color-pantone-black-c
+  color: #000000 !important
+.has-color-pantone-344-c
+  color: #a0d8b3 !important
+
+// secondary colors
+.has-background-pantone-330-c
   background-color: #00463f !important
 .has-background-pantone-555-c
   background-color: #1f7056 !important
@@ -149,6 +157,16 @@ $menu-label-color: $white-ter
   background-color: #dfcbab !important
 .has-background-pantone-487-c
   background-color: #e5a293 !important
+.has-color-pantone-330-c
+  color: #00463f !important
+.has-color-pantone-555-c
+  color: #1f7056 !important
+.has-color-pantone-134-c
+  color: #fdd278 !important
+.has-color-pantone-7501-c
+  color: #dfcbab !important
+.has-color-pantone-487-c
+  color: #e5a293 !important
 
 
 @import "~bulma"
