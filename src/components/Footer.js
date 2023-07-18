@@ -7,7 +7,7 @@ import logo from "../img/YS final-02.svg";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter has-background-pantone-344-c">
+      <footer className="footer has-text-white-ter has-background-pantone-555-c">
         <div className="content has-text-centered">
           <img
             src={logo}
@@ -15,8 +15,8 @@ const Footer = class extends React.Component {
             style={{ width: "30em" }}
           />
         </div>
-        <div className="content has-text-centered has-text-white-ter has-background-pantone-344-c">
-          <div className="container has-text-white-ter has-background-pantone-344-c">
+        <div className="content has-text-centered has-text-white-ter has-background-pantone-555-c">
+          <div className="container has-text-white-ter has-background-pantone-555-c">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
                 <section className="menu">
