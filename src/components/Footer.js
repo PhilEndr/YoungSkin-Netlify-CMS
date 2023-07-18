@@ -7,16 +7,16 @@ import logo from "../img/YS final-02.svg";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
+      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#1f7056!important" }}>
         <div className="content has-text-centered">
           <img
             src={logo}
             alt="Younger Skin"
-            style={{ width: "14em" }}
+            style={{ width: "30em" }}
           />
         </div>
-        <div className="content has-text-centered has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
-          <div className="container has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
+        <div className="content has-text-centered has-text-white-ter" style={{ backgroundColor: "#1f7056!important" }}>
+          <div className="container has-text-white-ter" style={{ backgroundColor: "#1f7056!important" }}>
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
                 <section className="menu">
