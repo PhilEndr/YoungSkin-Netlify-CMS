@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Younger Skin",
     description:
-      "Younger Skin Skin-Care Products",
+      "Younger Skin Cleancare",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

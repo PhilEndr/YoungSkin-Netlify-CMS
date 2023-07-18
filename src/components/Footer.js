@@ -2,12 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import SocialMedia from "./SocialMedia";
 
-import logo from "../img/ys_logo_small_brown.jpg";
+import logo from "../img/YS final-02.svg";
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter" style={{ backgroundColor: "#ddc9a8!important" }}>
+      <footer className="footer has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
         <div className="content has-text-centered">
           <img
             src={logo}
@@ -15,8 +15,8 @@ const Footer = class extends React.Component {
             style={{ width: "14em" }}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter" style={{ backgroundColor: "#ddc9a8!important" }}>
-          <div className="container has-background-black has-text-white-ter" style={{ backgroundColor: "#ddc9a8!important" }}>
+        <div className="content has-text-centered has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
+          <div className="container has-text-white-ter" style={{ backgroundColor: "#00463f!important" }}>
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
                 <section className="menu">
