@@ -61,7 +61,7 @@ class TestimonialRollTemplate extends React.Component {
                   </span>
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  <Link className="btn" to={post.fields.slug}>
                     Read more →
                   </Link>
                 </p>
