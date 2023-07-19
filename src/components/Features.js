@@ -19,7 +19,7 @@ const FeatureGrid = ({ gridItems }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
-          <p className="feature-text">{item.text}</p>
+          <p className="feature-text has-margin-top">{item.text}</p>
         </section>
       </div>
     ))}
