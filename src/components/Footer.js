@@ -15,8 +15,8 @@ const Footer = class extends React.Component {
             style={{ width: "30em" }}
           />
         </div>
-        <div className="content has-text-centered has-text-white-ter has-background-pantone-555-c-trans">
-          <div className="container has-text-white-ter has-background-pantone-555-c-trans">
+        <div className="content has-text-centered has-text-white-ter">
+          <div className="container has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
                 <section className="menu">
