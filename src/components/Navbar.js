@@ -46,7 +46,7 @@ const Navbar = class extends React.Component {
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-burger burger has-background-pantone-555-c-trans ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               role="menuitem"
               tabIndex={0}
