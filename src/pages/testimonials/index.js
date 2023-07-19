@@ -41,7 +41,7 @@ export default class TestimonialIndexPage extends React.Component {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "flex-end",
-                  background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 100%)",
+                  background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(160,216,179,0.2) 100%)",
                   height: "100%",
                 }}
               >

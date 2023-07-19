@@ -66,7 +66,7 @@ export default function FullWidthImage(props) {
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
-              background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(160,216,179,0.5) 100%)",
+              background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(160,216,179,0.2) 100%)",
               height: "100%",
             }}
           >
@@ -75,7 +75,7 @@ export default function FullWidthImage(props) {
               <h1
                 className="new-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
-                  textShadow: "rgba(142, 152, 100, 0.5) 0.3rem 3px 0px",
+                  textShadow: "rgba(0, 70, 63, 0.2) 0.3rem 3px 0px",
                   color: "white",
                   lineHeight: "1",
                   padding: "1rem",
@@ -89,8 +89,8 @@ export default function FullWidthImage(props) {
               <h3
                 className="new-subtitle has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  boxShadow: "rgba(142, 152, 100, 0.3) 0.3rem 0px 0px",
-                  backgroundColor: "rgba(142, 152, 100, 0.3)",
+                  boxShadow: "rgba(0, 70, 63, 0.3) 0.3rem 0px 0px",
+                  backgroundColor: "rgba(0, 70, 63, 0.3)",
                   color: "white",
                   lineHeight: "1",
                   padding: "1rem",
