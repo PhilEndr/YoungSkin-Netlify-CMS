@@ -10,21 +10,21 @@ import tiktok from "../img/social/tiktok-svgrepo-com.svg";
 const SocialMedia = () => {
     return (
         <div className="is-4 social" style={{padding: "0.75rem"}}>
-            <a title="instagram" href="https://www.instagram.com/younger.skin.cleancare/" target="_blank" rel="noopener noreferrer">
+            <a title="instagram" href="https://www.instagram.com/younger.skin.cleancare/" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <img
                 src={instagram}
                 alt="Instagram"
                 style={{ width: "1em", height: "1em" }}
                 />
             </a>
-            <a title="youtube" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <a title="youtube" href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <img
                 src={youtube}
                 alt="Youtube"
                 style={{ width: "1em", height: "1em" }}
                 />
             </a>
-            <a title="tiktok" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <a title="tiktok" href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="social-media-item">
                 <img
                 className="fas fa-lg"
                 src={tiktok}
