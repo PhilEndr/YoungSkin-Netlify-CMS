@@ -23,7 +23,7 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active has-background-pantone-555-c-trans",
+              navBarActiveClass: "is-active has-background-pantone-555-c-invisible",
             })
           : this.setState({
               navBarActiveClass: "",
